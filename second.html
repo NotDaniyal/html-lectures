@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(3, 5, 41);
+        color: white;
+        text-align: center;
+    }
+    .container{
+        background-color: white;
+        width: 32px;
+        position: absolute;
+        border-radius: 16px;
+        height: 32px;
+        animation: animateX 3s linear infinite, animateY 1s infinite alternate;
+    }
+
+    .box{
+    background-color: black;
+    width: 32px;
+    position: absolute;
+    border-radius: 16px;
+    height: 32px;
+    animation: animateA 3s linear infinite, animateB 1s infinite alternate;
+}
+    @keyframes animateX{
+        from{
+            left: 0;
+        }
+        to{
+            left: 100%;
+        }
+    }
+    @keyframes animateY {
+        from{bottom: 0;
+        }
+        to{
+            bottom: 100%;
+        }
+        
+    }
+
+
+    @keyframes animateA{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0;
+    }
+}
+@keyframes animateB {
+    from{bottom: 100%;
+    }
+    to{
+        bottom: 0;
+    }
+    
+}
+</style>
+<body>
+    <b>This my new web page</b><br>
+    <strong>Tis my important web page</strong><br>
+    <i>This is italic</i><br>
+    <mark>This is mark</mark><br>
+    <del>This is deleted</del><br>
+    <ins>This is inserted</ins><br>
+    <sub>This is subscribe text</sub><br>
+    <sup>This is subscribe text</sup><br>
+    <p>create an HTML page which will display names of Indian Cricket team members with all text-style[bold,italic, underline,small, mark]and its combination on seperate line.</p>
+    <div class="container">
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNK1BDtZg8q9mpgo8PlGs_QhxhE4vgcOdBwA&s" alt=""> -->
+    </div>
+    <div class="box"></div>
+</body>
+</html>
